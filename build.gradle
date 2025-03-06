@@ -47,6 +47,16 @@ repositories {
       name = "gegy1000"
       url = "https://maven.gegy1000.net"
     }
+ 
+    maven {
+      name = "femtopedia"
+      url = "https://femtopedia.de/maven"
+    }
+ 
+    maven {
+      name = "CurseMaven"
+      url = "https://cursemaven.com"
+    }
 	
 	maven {
 		url 'https://jitpack.io'
@@ -54,8 +64,10 @@ repositories {
 }
 
 dependencies {
-   deobfCompile "net.ilexiconn:llibrary:1.7.14-1.12.2"
-   compile "com.azanor:thaumcraft-api:6.1-beta23"
+   //deobfCompile "net.ilexiconn:llibrary:1.7.14-1.12.2"
+   deobfCompile "curse.maven:llibrary-243298:2573032"
+   //compile "com.azanor:thaumcraft-api:6.1-beta23"
+   compile "curse.maven:thaumcraft-223628:2607849"
   // deobfCompile "com.github.azanor:Baubles:${baubles_version}"
   // deobfCompile "mcp.mobius.waila:Hwyla:1.8.25-B40_1.12"
   // runtime "mezz.jei:jei_1.12.2:4.9.1.181"   

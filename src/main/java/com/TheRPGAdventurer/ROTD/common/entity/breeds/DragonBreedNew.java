@@ -3,12 +3,12 @@ package com.TheRPGAdventurer.ROTD.common.entity.breeds;
 import com.TheRPGAdventurer.ROTD.client.render.dragon.breeds.DragonBreedRenderer;
 import com.TheRPGAdventurer.ROTD.common.entity.physicalmodel.DragonVariants;
 import com.google.common.collect.ImmutableList;
-import com.sun.istack.internal.NotNull;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.text.translation.I18n;
 
+import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -60,7 +60,7 @@ public class DragonBreedNew {
    * @param internalName
    * @throws IllegalArgumentException
    */
-  public static void validateName(@NotNull String internalName) throws IllegalArgumentException {
+  public static void validateName(@Nonnull String internalName) throws IllegalArgumentException {
     if (internalName.length() < 4) throw new IllegalArgumentException("internal name too short (< 4):" + internalName);
     if (internalName.length() > 12) throw new IllegalArgumentException("internal name too long (> 12)" + internalName);
     if (!internalName.matches("[a-zA-Z0-9]+")) throw new IllegalArgumentException("internal name must contain only letters and/or digits:" + internalName);

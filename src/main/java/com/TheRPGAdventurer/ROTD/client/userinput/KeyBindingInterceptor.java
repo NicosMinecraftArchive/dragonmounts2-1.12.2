@@ -202,10 +202,10 @@ public class KeyBindingInterceptor extends KeyBinding {
     }
   }
   protected KeyBinding interceptedKeyBinding;
-  private static final Field keybindArrayField = ReflectionHelper.findField(KeyBinding.class, "KEYBIND_ARRAY", "field_74516_a");
-  private static final Field keyCodeField = ReflectionHelper.findField(KeyBinding.class, "keyCode", "field_74512_d");
-  private static final Field pressedField = ReflectionHelper.findField(KeyBinding.class, "pressed", "field_74513");
-  private static final Field pressTimeField = ReflectionHelper.findField(KeyBinding.class, "pressTime", "field_151474_i");
+  private static final Field keybindArrayField = ReflectionHelper.findField(KeyBinding.class, "KEYBIND_ARRAY", "field_74516_a", "a");
+  private static final Field keyCodeField = ReflectionHelper.findField(KeyBinding.class, "keyCode", "field_74512_d", "h");
+  private static final Field pressedField = ReflectionHelper.findField(KeyBinding.class, "pressed", "field_74513_e", "i");
+  private static final Field pressTimeField = ReflectionHelper.findField(KeyBinding.class, "pressTime", "field_151474_i", "j");
 
 //  private int interceptedPressTime;
 
